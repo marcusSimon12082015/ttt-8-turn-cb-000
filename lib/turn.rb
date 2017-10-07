@@ -3,7 +3,7 @@ require_relative 'is_valid_index'
 require_relative 'position_taken'
 
 def turn(board)
-  puts "Please enter 1-9"
+  puts "Please enter 1-9:"
 	input = gets.strip
   index = input_to_index(input)
 	valid = nil
@@ -13,7 +13,7 @@ def turn(board)
 			display_board(board)
 			valid = true
 		else
-			puts "Please enter 1-9"
+			puts "Please enter 1-9:"
       input = gets.strip
 			index = input_to_index(input)
 		end
