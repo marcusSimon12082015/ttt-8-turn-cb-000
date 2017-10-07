@@ -8,7 +8,7 @@ def turn(board,input)
 	valid = nil
 	loop do
 		if valid_move?(board,index)
-			board[index-1] = "X"
+      move(board,index)
 			display_board(board)
 			valid = true
 		else
@@ -18,7 +18,7 @@ def turn(board,input)
 		if valid == true
 			break
 		end
-	end	
+	end
 end
 
 def valid_move?(board,index)
