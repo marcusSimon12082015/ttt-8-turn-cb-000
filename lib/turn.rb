@@ -24,7 +24,7 @@ def turn(board)
 end
 
 def valid_move?(board,index)
-  is_valid_index(index) && !position_taken?(board,index)
+  is_valid_index?(index) && !position_taken?(board,index)
 end
 
 def move(board,index,token="X")
