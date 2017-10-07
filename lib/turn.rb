@@ -4,7 +4,8 @@ require_relative 'position_taken'
 
 def turn(board)
   puts "Please enter 1-9"
-	index = input_to_index(input)
+	input = gets.strip
+  index = input_to_index(input)
 	valid = nil
 	loop do
 		if valid_move?(board,index)
@@ -13,7 +14,8 @@ def turn(board)
 			valid = true
 		else
 			puts "Please enter 1-9"
-			index = input_to_index(inp)
+      input = gets.strip
+			index = input_to_index(input)
 		end
 		if valid == true
 			break
