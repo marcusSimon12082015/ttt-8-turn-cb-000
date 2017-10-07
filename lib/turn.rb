@@ -1,6 +1,6 @@
-require_relative 'display_board.rb'
-require_relative 'is_valid_index.rb'
-require_relative 'position_taken.rb'
+require_relative 'display_board'
+require_relative 'is_valid_index'
+require_relative 'position_taken'
 
 def turn(board,input)
   puts "What is your move?"
